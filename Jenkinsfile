@@ -5,10 +5,7 @@ pipeline {
         stage('Build') {
 		
 			when{
-				script{
-				changeset glob: "*.js", caseSensitive: true
-				}
-				
+				changeset glob: "*.js"
 			}
 		
             steps {                
